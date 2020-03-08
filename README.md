@@ -8,7 +8,7 @@ git checkout XXXX
 git checkout -b xxxx
 ```
 
-#### first push to remote
+#### first push to remote (only first time)
 ```
 git push -u origin xxxx
 ```
@@ -29,6 +29,20 @@ git reset COMMIT_ID //git log
 ctrl+shift+v
 ```
 
+#### remove the file from the Git repository and the filesystem
+```
+git rm XXX
+git commit -m "message"
+git push origin branch_name  
+```
+
+#### remove the file only from the Git repository and not remove it from the filesystem
+```
+git rm --cached XXXX
+git commit -m "message"
+git push origin branch_name  
+
+```
 #### Extensions
 - Commuinity Material Theme
 - GitLens
